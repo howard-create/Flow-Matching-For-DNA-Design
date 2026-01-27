@@ -1,5 +1,5 @@
-## Regulatory DNA Sequence Design
-This codebase is developed on top of [MDLM (Sahoo et.al, 2023)](https://github.com/kuleshov-group/mdlm).
+## Flow Matching For DNA Design and the reasoning method: Rollout
+This codebase is developed on top of [discrete-flow-matching-pytorch (Ka, 2023)](https://github.com/RobinKa/discrete-flow-matching-pytorch) and [DRAKES (Wang et al., 2024] (https://github.com/ChenyuWang-Monica/DRAKES)
 
 ### Environment Installation
 ```
