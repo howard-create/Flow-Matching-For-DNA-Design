@@ -1,5 +1,5 @@
 ## Flow Matching For DNA Design and the reasoning method: Rollout
-This codebase is developed on top of [discrete-flow-matching-pytorch (Ka, 2023)](https://github.com/RobinKa/discrete-flow-matching-pytorch) and [DRAKES (Wang et al., 2024] (https://github.com/ChenyuWang-Monica/DRAKES)
+This codebase is developed on top of [discrete-flow-matching-pytorch (Ka, 2023)](https://github.com/RobinKa/discrete-flow-matching-pytorch) and DRAKES (Wang et al., 2024) (https://github.com/ChenyuWang-Monica/DRAKES)
 
 ### Environment Installation
 ```
@@ -17,16 +17,16 @@ Note that you need to install `gReLU` package with version 1.0.2.
 ### Data and Model Weights
 All data and model weights can be downloaded from this link:
 
-[https://drive.google.com/drive/folders/1gY8k0UjOnzmm08sebZkOwX_yNhu1JeSx?usp=drive_link]
+https://drive.google.com/drive/folders/1gY8k0UjOnzmm08sebZkOwX_yNhu1JeSx?usp=drive_link
 
 ### Gosai Dataset
 The enhancer dataset used for this experiment is provided in `BASE_PATH/mdlm/gosai_data`.
 
 ### Pretrained Generative Model
 ```
-python main_gosai.py
+python main_flow.py
 ```
-The pretrained model weights are provided in `BASE_PATH/mdlm/outputs_gosai/pretrained.ckpt`.
+The pretrained model weights are provided in `BASE_PATH/pretrained_models/pretrained_fm.ckpt`.
 
 ### Reward Oracle
 ```
@@ -37,9 +37,9 @@ The oracle for fine-tuning is provided in `BASE_PATH/mdlm/outputs_gosai/lightnin
 The oracle for binary classification on chromatin accessibility (ATAC-Acc) is provided in `BASE_PATH/mdlm/gosai_data/binary_atac_cell_lines.ckpt`.
 
 
-### Fine-Tune to Optimize Enhancer Activity
+### Fine-Tune to Optimize Enhancer Activity With Flow Matching Models
 ```
-python finetune_reward_bp.py --name test
+python finetune_flow.py
 ```
 The fine-tuned model weights are provided in `BASE_PATH/mdlm/reward_bp_results_final/finetuned.ckpt`
 
