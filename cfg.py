@@ -1,4 +1,4 @@
-# Classifier-free Guidance baseline
+  # Classifier-free Guidance baseline
 import os
 import fsspec
 import hydra
