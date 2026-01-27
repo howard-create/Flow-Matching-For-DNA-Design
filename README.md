@@ -17,9 +17,7 @@ Note that you need to install `gReLU` package with version 1.0.2.
 ### Data and Model Weights
 All data and model weights can be downloaded from this link:
 
-https://www.dropbox.com/scl/fi/zi6egfppp0o78gr0tmbb1/DRAKES_data.zip?rlkey=yf7w0pm64tlypwsewqc01wmfq&st=xe8dzn8k&dl=0
-
-Save the downloaded file in `BASE_PATH`.
+[https://drive.google.com/drive/folders/1gY8k0UjOnzmm08sebZkOwX_yNhu1JeSx?usp=drive_link]
 
 ### Gosai Dataset
 The enhancer dataset used for this experiment is provided in `BASE_PATH/mdlm/gosai_data`.
