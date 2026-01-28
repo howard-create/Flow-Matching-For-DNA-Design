@@ -20,13 +20,13 @@ All data and model weights can be downloaded from this link:
 https://drive.google.com/drive/folders/1gY8k0UjOnzmm08sebZkOwX_yNhu1JeSx?usp=drive_link
 
 ### Gosai Dataset
-The enhancer dataset used for this experiment is provided in `BASE_PATH/mdlm/gosai_data`.
+The enhancer dataset used for this experiment is provided in `BASE_PATH/DNA_design/dataset/gosai_all.csc`.
 
 ### Pretrained Generative Model
 ```
 python main_flow.py
 ```
-The pretrained model weights are provided in `BASE_PATH/pretrained_models/pretrained_fm.ckpt`.
+The pretrained model weights are provided in `BASE_PATH/DNA_design/pretrained_models/pretrained_fm.ckpt`.
 
 ### Reward Oracle
 ```
@@ -34,14 +34,14 @@ python train_oracle.py
 ```
 The oracle for fine-tuning is provided in `BASE_PATH/mdlm/outputs_gosai/lightning_logs/reward_oracle_ft.ckpt`; the oracle for evaluation is provided in `BASE_PATH/mdlm/outputs_gosai/lightning_logs/reward_oracle_eval.ckpt`.
 
-The oracle for binary classification on chromatin accessibility (ATAC-Acc) is provided in `BASE_PATH/mdlm/gosai_data/binary_atac_cell_lines.ckpt`.
+The oracle for binary classification on chromatin accessibility (ATAC-Acc) is provided in `BASE_PATH/DNA_design/dataset/binary_atac_cell_lines.ckpt`.
 
 
 ### Fine-Tune to Optimize Enhancer Activity With Flow Matching Models
 ```
 python finetune_flow.py
 ```
-The fine-tuned model weights are provided in `BASE_PATH/mdlm/reward_bp_results_final/finetuned.ckpt`
+The fine-tuned model weights are provided in `BASE_PATH/DNA_design/finetune_models/fm.ckpt`
 
 ### Evaluation
 See `eval.ipynb`
