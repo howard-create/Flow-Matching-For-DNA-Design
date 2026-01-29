@@ -208,7 +208,7 @@ def run_validation(model, old_model, reward_model_eval, dataloader, cfg, before_
 
 if __name__ == "__main__":
     base_path = "/home/ubuntu"
-    ckpt_path = os.path.join(base_path, 'outputs_gosai/2025.12.27/080231/checkpoints/best.ckpt') 
+    ckpt_path = os.path.join(base_path, 'DNA_design/pretrained_models/pretrained_fm.ckpt') 
     log_base_dir = os.path.join(base_path, 'mdlm/reward_bp_results_final')
     GlobalHydra.instance().clear()
 
@@ -247,3 +247,4 @@ if __name__ == "__main__":
     train_loader, val_loader, _ = get_dataloaders_gosai(cfg)
 
     fine_tune(new_model, reward_model, reward_model_eval, old_model, cfg, log_path, save_path, train_loader, val_loader)
+
